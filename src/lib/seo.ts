@@ -16,7 +16,7 @@ export function pageMetadata({
   path: string;
 }): Metadata {
   const canonical = path === "/" ? "/" : path;
-  const fullTitle = path === "/" ? `${site.name} — ${title}` : `${title} | ${site.name}`;
+  const fullTitle = path === "/" ? `${site.name}: ${title}` : `${title} | ${site.name}`;
   return {
     title: fullTitle,
     description,
@@ -27,7 +27,7 @@ export function pageMetadata({
       url: canonical,
       siteName: site.name,
       type: "website",
-      images: [{ url: site.ogImage, width: 1200, height: 630, alt: `${site.name} — ${site.tagline}` }],
+      images: [{ url: site.ogImage, width: 1200, height: 630, alt: `${site.name}: ${site.tagline}` }],
     },
     twitter: {
       card: "summary_large_image",
@@ -82,7 +82,7 @@ export function serviceLd() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Occupational telemedicine",
-    name: `${site.name} occupational telemedicine`,
+    name: "Occupational telemedicine by Medix Occupational",
     description: site.description,
     provider: { "@type": "Organization", name: site.name, url: site.url },
     areaServed: { "@type": "Country", name: "United States" },
@@ -108,7 +108,7 @@ export function faqPageLd() {
 /**
  * Serialize a JSON-LD object for use as a <script> text child. Escapes `<` to its
  * unicode form so the payload can never break out of the script tag, and stays valid
- * JSON — no dangerouslySetInnerHTML needed.
+ * JSON, no dangerouslySetInnerHTML needed.
  */
 export function jsonLd(data: object): string {
   return JSON.stringify(data).replace(/</g, "\\u003c");

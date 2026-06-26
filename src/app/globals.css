@@ -9,15 +9,15 @@
 @theme {
   /* Palette */
   --color-brand: #004aad; /* MEDIX blue, from the logo */
-  --color-navy: #06224a; /* deep brand navy — dark sections / footer */
+  --color-navy: #06224a; /* deep brand navy, dark sections / footer */
   --color-ink: #14181b; /* primary body text (near-black) */
   --color-surface: #f5f6f8; /* dominant page ground */
   --color-panel: #ffffff; /* elevated surfaces (cards, forms) */
   --color-steel: #5e6873; /* secondary text, dividers, mono labels */
-  --color-signal: #b8862a; /* brass/amber accent — CTAs, hover, pulse. Use sparingly. */
+  --color-signal: #b8862a; /* brass/amber accent, CTAs, hover, pulse. Use sparingly. */
   --color-signal-strong: #a0741f; /* darker brass for hover on light fills */
 
-  /* Type — wired to next/font CSS variables (see layout.tsx) */
+  /* Type, wired to next/font CSS variables (see layout.tsx) */
   --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, monospace;
@@ -61,7 +61,7 @@
   }
 }
 
-/* The lifeline pulse — a calm brass dash travelling the brand-blue hairline. */
+/* The lifeline pulse, a calm brass dash travelling the brand-blue hairline. */
 @keyframes medix-lifeline {
   0% {
     stroke-dashoffset: 1000;

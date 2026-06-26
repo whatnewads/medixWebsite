@@ -51,29 +51,30 @@ console.log("trimmed content size:", trimmedTransparent.info.width, "x", trimmed
 await sharp(trimmedTransparent.data).png().toFile(`${PUB}/medixlogo-mark.png`);
 await sharp(trimmedWhite.data).png().toFile(`${PUB}/medixlogo-mark-white.png`);
 
-// 4) Favicon source: the "M" only. The MEDIX band sits in the top ~74% of the trimmed mark;
-//    the "M" is the leftmost letter. Crop, trim, pad to a square on navy.
-const tw = trimmedTransparent.info.width, th = trimmedTransparent.info.height;
-const wordmarkH = Math.round(th * 0.74); // exclude the tagline row
-const mWhite = await sharp(trimmedWhite.data)
-  .extract({ left: 0, top: 0, width: Math.round(tw * 0.205), height: wordmarkH })
-  .trim({ threshold: 10 })
-  .toBuffer({ resolveWithObject: true });
-const mSide = Math.max(mWhite.info.width, mWhite.info.height);
-const pad = Math.round(mSide * 0.32);
-const square = mSide + pad * 2;
-const faviconBase = await sharp({
-  create: { width: square, height: square, channels: 4, background: NAVY },
-})
-  .composite([{ input: mWhite.data, gravity: "center" }])
-  .png()
-  .toBuffer();
-for (const size of [16, 32, 192, 512]) {
-  await sharp(faviconBase).resize(size, size).png().toFile(`${PUB}/icon-${size}.png`);
+// 4) Favicon source: the "M" only. Off by default — set GEN_FAVICONS=1 to regenerate.
+//    (Owner is keeping the existing favicon set.)
+if (process.env.GEN_FAVICONS === "1") {
+  const tw = trimmedTransparent.info.width, th = trimmedTransparent.info.height;
+  const wordmarkH = Math.round(th * 0.74); // exclude the lower row
+  const mWhite = await sharp(trimmedWhite.data)
+    .extract({ left: 0, top: 0, width: Math.round(tw * 0.205), height: wordmarkH })
+    .trim({ threshold: 10 })
+    .toBuffer({ resolveWithObject: true });
+  const mSide = Math.max(mWhite.info.width, mWhite.info.height);
+  const pad = Math.round(mSide * 0.32);
+  const square = mSide + pad * 2;
+  const faviconBase = await sharp({
+    create: { width: square, height: square, channels: 4, background: NAVY },
+  })
+    .composite([{ input: mWhite.data, gravity: "center" }])
+    .png()
+    .toBuffer();
+  for (const size of [16, 32, 192, 512]) {
+    await sharp(faviconBase).resize(size, size).png().toFile(`${PUB}/icon-${size}.png`);
+  }
+  await sharp(faviconBase).resize(180, 180).png().toFile(`${PUB}/apple-touch-icon.png`);
+  await sharp(faviconBase).resize(48, 48).png().toFile(`${PUB}/favicon.ico`);
 }
-await sharp(faviconBase).resize(180, 180).png().toFile(`${PUB}/apple-touch-icon.png`);
-await sharp(faviconBase).resize(48, 48).png().toFile(`${PUB}/favicon.ico`); // PNG-encoded .ico, fine for modern browsers
-await sharp(faviconBase).resize(512, 512).png().toFile("/tmp/medix-favicon-preview.png");
 
 // 5) OG image: 1200x630 navy, white wordmark+tagline centered.
 const ogLogo = await sharp(trimmedWhite.data).resize({ width: 900 }).toBuffer();
@@ -82,4 +83,7 @@ await sharp({ create: { width: 1200, height: 630, channels: 4, background: NAVY 
   .png()
   .toFile(`${PUB}/og-image.png`);
 
-console.log("assets written:", "medixlogo.png, medixlogo-transparent.png, medixlogo-white.png, icon-{16,32,192,512}.png, apple-touch-icon.png, favicon.ico, og-image.png");
+console.log(
+  "assets written: medixlogo.png, medixlogo-transparent.png, medixlogo-white.png, medixlogo-mark.png, medixlogo-mark-white.png, og-image.png" +
+    (process.env.GEN_FAVICONS === "1" ? " + favicons" : " (favicons kept as-is)"),
+);

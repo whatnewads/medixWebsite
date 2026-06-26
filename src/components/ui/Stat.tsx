@@ -1,4 +1,4 @@
-/** A data figure with a mono label — technical-precision device. */
+/** A data figure with a mono label, technical-precision device. */
 export function Stat({
   figure,
   label,

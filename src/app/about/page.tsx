@@ -8,9 +8,9 @@ import { Card } from "@/components/ui/Card";
 import { LinkButton } from "@/components/ui/Button";
 
 export const metadata: Metadata = pageMetadata({
-  title: "About — built by a paramedic",
+  title: "About, built by a paramedic",
   description:
-    "Medix was founded by Wesley Yielding, a paramedic with 8 years in EMS and 4 in occupational health. We make occupational health accessible to the sites that fall through the cracks.",
+    "Medix Occupational was founded by Wesley Yielding, a paramedic with 8 years in EMS and 4 in occupational health. We extend real clinical access to the remote crews that need it most.",
   path: "/about",
 });
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
 
       <section className="py-16 sm:py-24">
         <Container>
-          <Eyebrow>About Medix</Eyebrow>
+          <Eyebrow>About Medix Occupational</Eyebrow>
           <h1 className="mt-5 max-w-3xl text-4xl font-extrabold sm:text-5xl">
             Built by a paramedic, for the crews who get left without one.
           </h1>
@@ -49,9 +49,9 @@ export default function AboutPage() {
             <div>
               <Eyebrow>Mission</Eyebrow>
               <p className="mt-4 text-xl leading-relaxed text-ink">
-                Medix exists to make occupational healthcare accessible to the
-                sites that fall through the cracks — too big for a kit, too small
-                for a full-time medic.
+                Medix Occupational exists to make occupational healthcare
+                accessible to the sites that fall through the cracks: too big for
+                a kit, too small for a full-time medic.
               </p>
             </div>
             <div>
@@ -59,16 +59,38 @@ export default function AboutPage() {
               <p className="mt-4 text-lg leading-relaxed text-steel">
                 Wesley Yielding is a paramedic with 8 years of EMS experience and
                 4 years in occupational health, having served on jobsites ranging
-                from 25 to 500 team members. He saw the same gap on site after
-                site: the moment a worker got hurt, there was no clinician in the
-                loop. Medix closes that gap.
+                from 25 to 500 team members.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
+      {/* The insight / pain point, pull-quote treatment */}
       <section className="py-16 sm:py-24">
+        <Container>
+          <Eyebrow>Why we exist</Eyebrow>
+          <blockquote className="mt-6 max-w-4xl border-l-2 border-signal pl-6 sm:pl-8">
+            <p className="font-display text-2xl font-bold leading-snug text-ink sm:text-3xl lg:text-4xl">
+              Occupational-health physicians already connect to remote job sites
+              by video. The crews that need it most, smaller and farther from the
+              gate, are still out of reach.
+            </p>
+          </blockquote>
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-steel">
+            Medix Occupational puts our paramedics on that same live link,
+            extending real clinical access to the even more remote. That is the
+            accessibility our workforce needs.
+          </p>
+          <p className="mt-8 max-w-3xl font-display text-xl font-bold leading-snug text-brand sm:text-2xl">
+            A licensed clinician in every crew&apos;s corner, on every site, no
+            matter how far from help. That is the dream state Medix Occupational
+            is built to deliver.
+          </p>
+        </Container>
+      </section>
+
+      <section className="border-t border-steel/15 bg-panel py-16 sm:py-24">
         <Container>
           <Eyebrow>What we believe</Eyebrow>
           <h2 className="mt-3 text-2xl sm:text-3xl">Our values</h2>

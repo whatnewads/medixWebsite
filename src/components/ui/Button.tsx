@@ -10,7 +10,7 @@ const variants: Record<Variant, string> = {
   // Primary CTA: brass/amber fill, ink text (AA ~5.5:1). The high-vis "go".
   primary:
     "bg-signal text-ink hover:bg-signal-strong focus-visible:outline-signal-strong",
-  // Secondary: ghost/outlined in brand blue — echoes the logo's outlined letterforms.
+  // Secondary: ghost/outlined in brand blue, echoes the logo's outlined letterforms.
   secondary:
     "border border-brand text-brand bg-transparent hover:bg-brand hover:text-white focus-visible:outline-brand",
   // Ghost on dark bands: outlined in white.

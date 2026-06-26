@@ -13,10 +13,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-steel/15 bg-surface/90 backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center" aria-label="Medix — home">
+        <Link href="/" className="flex items-center" aria-label="Medix Occupational home">
           <Image
             src="/medixlogo-mark.png"
-            alt="Medix"
+            alt="Medix Occupational"
             width={1949}
             height={632}
             priority

@@ -11,17 +11,17 @@ export function Footer() {
       <Container className="py-14">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <Link href="/" className="inline-flex" aria-label="Medix — home">
+            <Link href="/" className="inline-flex" aria-label="Medix Occupational home">
               <Image
                 src="/medixlogo-mark-white.png"
-                alt="Medix — A Medic on Every Jobsite."
+                alt="Medix Occupational"
                 width={1949}
                 height={632}
                 className="h-10 w-auto"
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
-              Occupational telemedicine for jobsites — a licensed paramedic on
+              Occupational telemedicine for jobsites. A licensed paramedic on
               screen the moment your crew needs one.
             </p>
           </div>

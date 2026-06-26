@@ -6,16 +6,16 @@ import { Card } from "@/components/ui/Card";
 import { LinkButton } from "@/components/ui/Button";
 
 export const metadata: Metadata = pageMetadata({
-  title: "What we do — occupational telemedicine",
+  title: "What we do: occupational telemedicine",
   description:
-    "As-needed telemedicine for jobsites: a licensed clinician connects on demand to assess the worker, manage the case, and guide care within first-aid scope — with clear escalation.",
+    "As-needed telemedicine for jobsites: a licensed clinician connects on demand to assess the worker, manage the case, and guide care within first-aid scope, with clear escalation.",
   path: "/what-we-do",
 });
 
 const offerings = [
   {
     title: "As-needed clinical access",
-    body: "When a worker is hurt or sick, a licensed mid-level clinician — a paramedic or EMT experienced in occupational health — connects on demand.",
+    body: "When a worker is hurt or sick, a licensed mid-level clinician (a paramedic or EMT experienced in occupational health) connects on demand.",
   },
   {
     title: "Real-time assessment and case management",
@@ -23,15 +23,15 @@ const offerings = [
   },
   {
     title: "Care within first-aid scope, delivered on site",
-    body: "The hands are your own first-aid/CPR/AED-certified team leads; the clinician is the judgment guiding them — getting the right care to the worker, fast.",
+    body: "The hands are your own first-aid/CPR/AED-certified team leads; the clinician is the judgment guiding them, getting the right care to the worker, fast.",
   },
   {
-    title: "The Medix first-aid bag",
-    body: "When a site comes online, we ship a stocked first-aid bag and track its contents — so the clinician always knows what's on hand to guide care.",
+    title: "The Medix Occupational first-aid bag",
+    body: "When a site comes online, we ship a stocked first-aid bag and track its contents, so the clinician always knows what's on hand to guide care.",
   },
   {
     title: "Clear escalation",
-    body: "Stable workers who need more get an outpatient order (for example, imaging). Unstable workers get immediate emergency direction. Medix gets people the care they need.",
+    body: "Workers with a stable presentation who need more get an outpatient order (for example, imaging). Workers with an unstable presentation get immediate emergency direction. Medix Occupational gets people the care they need.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function WhatWeDoPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-steel">
             As-needed telemedicine sessions between a worker and a licensed
-            clinician who provides assessment guidance and case management —
+            clinician who provides assessment guidance and case management,
             delivered hands-on through your certified personnel on site.
           </p>
         </Container>

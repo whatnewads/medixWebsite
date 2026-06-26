@@ -21,7 +21,7 @@ const FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_CONTACT_ID || "xlgyenjw";
 export function WaitlistForm() {
   const [state, handleSubmit] = useForm(FORM_ID);
 
-  // Log outcomes — events only, never field values.
+  // Log outcomes, events only, never field values.
   useEffect(() => {
     if (state.succeeded) logger.info("waitlist_submit_success");
   }, [state.succeeded]);
@@ -36,7 +36,7 @@ export function WaitlistForm() {
   if (state.succeeded) {
     return (
       <SuccessPanel title="You're on the list.">
-        Thanks — we&apos;ll be in touch as we onboard early sites.
+        Thanks, we&apos;ll be in touch as we onboard early sites.
       </SuccessPanel>
     );
   }
@@ -51,7 +51,7 @@ export function WaitlistForm() {
       className="space-y-5"
     >
       <Honeypot />
-      <input type="hidden" name="_subject" value="Medix waitlist signup" />
+      <input type="hidden" name="_subject" value="Medix Occupational waitlist signup" />
 
       <Field label="Business name" htmlFor="companyName" required>
         <Input
@@ -102,7 +102,7 @@ export function WaitlistForm() {
       </Button>
 
       <p className="text-xs leading-relaxed text-steel">
-        We&apos;ll only use this to contact you about Medix. See our{" "}
+        We&apos;ll only use this to contact you about Medix Occupational. See our{" "}
         <Link href="/privacy" className="text-brand underline">
           Privacy Policy
         </Link>

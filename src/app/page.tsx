@@ -10,7 +10,7 @@ import { Card } from "@/components/ui/Card";
 export const metadata: Metadata = pageMetadata({
   title: "Occupational telemedicine for jobsites",
   description:
-    "Medix puts a licensed paramedic on every jobsite — on screen in seconds to guide your certified crew through the right care. Onsite occupational health for medium, non-permanent projects.",
+    "Medix Occupational puts a licensed paramedic on every jobsite: on screen in seconds to guide your certified crew through the right care. Onsite occupational health for medium, non-permanent projects.",
   path: "/",
 });
 
@@ -18,12 +18,12 @@ const steps = [
   {
     n: "01",
     title: "Someone gets hurt.",
-    body: "A certified team lead opens Medix and connects.",
+    body: "A certified team lead opens Medix Occupational and connects.",
   },
   {
     n: "02",
     title: "A licensed paramedic answers in seconds",
-    body: "— by video and audio, before EMS could even reach a remote gate.",
+    body: "By video and audio, before EMS could even reach a remote gate.",
   },
   {
     n: "03",
@@ -33,7 +33,7 @@ const steps = [
   {
     n: "04",
     title: "The clinician directs what's next",
-    body: "— care on site within first-aid scope, an outpatient order, or immediate emergency escalation if the worker is unstable.",
+    body: "Care on site within first-aid scope, an outpatient order, or immediate emergency escalation for a worker with an unstable presentation.",
   },
 ];
 
@@ -72,12 +72,12 @@ export default function HomePage() {
 
             <p className="mt-8 max-w-xl text-base leading-relaxed text-ink">
               When a worker goes down, a licensed paramedic is on screen in
-              seconds — guiding your crew through the right care, right away.
+              seconds, guiding your crew through the right care, right away.
             </p>
           </div>
         </Container>
 
-        {/* The lifeline — a live link between the site and the clinician */}
+        {/* The lifeline: a live link between the site and the clinician */}
         <Container className="pb-16">
           <div className="flex items-center gap-4">
             <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-steel">
@@ -105,8 +105,9 @@ export default function HomePage() {
             <p className="text-lg leading-relaxed text-steel">
               A first-aid kit can&apos;t assess anyone. A full-time medic costs
               more than the project can carry. So when someone gets hurt, the
-              call is left to whoever&apos;s closest — with no clinician in the
-              loop. Medix puts a licensed paramedic in that loop, instantly.
+              call is left to whoever&apos;s closest, with no clinician in the
+              loop. Medix Occupational puts a licensed paramedic in that loop,
+              instantly.
             </p>
           </div>
         </Container>
@@ -143,7 +144,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-steel">
-              General contractors running medium, non-permanent projects —
+              General contractors running medium, non-permanent projects:
               roadwork and similar, roughly 25–250 workers, often where help is
               far from the gate.
             </p>
@@ -158,8 +159,8 @@ export default function HomePage() {
             <Eyebrow>Built by a paramedic</Eyebrow>
             <p className="mt-4 max-w-3xl text-xl leading-relaxed text-ink sm:text-2xl">
               Wesley Yielding spent 8 years in EMS and 4 in occupational health,
-              on sites of 25 to 500 people. Medix is the service he wished those
-              crews had.
+              on sites of 25 to 500 people. Medix Occupational is the service he
+              wished those crews had.
             </p>
             <div className="mt-6">
               <LinkButton href="/about" variant="secondary" className="px-5 py-2.5">
@@ -176,7 +177,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <Eyebrow onDark>Peace of mind</Eyebrow>
             <h2 className="mt-4 text-3xl text-white sm:text-4xl">
-              Your crew is never alone when something happens — and neither are
+              Your crew is never alone when something happens, and neither are
               the people who sent them out there.
             </h2>
             <div className="mt-8">

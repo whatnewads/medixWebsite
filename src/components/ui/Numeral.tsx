@@ -1,5 +1,5 @@
 /**
- * Large outlined numeral (01 / 02 / 03) — the "outline motif" that echoes the hollow
+ * Large outlined numeral (01 / 02 / 03), the "outline motif" that echoes the hollow
  * MEDIX wordmark. Used only on real sequences (how it works, getting started).
  * Stroke-only text via -webkit-text-stroke with a transparent fill.
  */

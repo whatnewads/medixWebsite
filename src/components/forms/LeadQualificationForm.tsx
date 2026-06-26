@@ -62,7 +62,7 @@ export function LeadQualificationForm() {
   const leadStatus =
     hasSafetyDept === "No" ? "disqualified_no_safety_dept" : "qualified";
 
-  // Log the branch when the prospect selects "No" — status only, never field values.
+  // Log the branch when the prospect selects "No", status only, never field values.
   useEffect(() => {
     if (hasSafetyDept === "No") logger.info("lead_safety_dept_no");
   }, [hasSafetyDept]);
@@ -87,10 +87,10 @@ export function LeadQualificationForm() {
     }
   }, [state.errors]);
 
-  // Every path shows the same success state — the lead is never told they're disqualified.
+  // Every path shows the same success state, the lead is never told they're disqualified.
   if (state.succeeded) {
     return (
-      <SuccessPanel title="Thanks — we've got it.">
+      <SuccessPanel title="Thanks, we've got it.">
         We&apos;ll review your project and be in touch shortly about getting your
         site covered.
       </SuccessPanel>
@@ -107,8 +107,8 @@ export function LeadQualificationForm() {
       className="space-y-5"
     >
       <Honeypot />
-      <input type="hidden" name="_subject" value="Medix lead — site qualification" />
-      {/* Internal qualification flag — rides along to the team's notification email only. */}
+      <input type="hidden" name="_subject" value="Medix Occupational lead: site qualification" />
+      {/* Internal qualification flag, rides along to the team's notification email only. */}
       <input type="hidden" name="leadStatus" value={leadStatus} />
 
       <div className="grid gap-5 sm:grid-cols-2">
@@ -133,7 +133,7 @@ export function LeadQualificationForm() {
       </div>
 
       <Field
-        label="How many jobsites do you need Medix to provide guidance for?"
+        label="How many jobsites do you need Medix Occupational to provide guidance for?"
         htmlFor="jobsiteCount"
         required
       >
@@ -178,13 +178,13 @@ export function LeadQualificationForm() {
         <ValidationError prefix="Safety department" field="hasSafetyDept" errors={state.errors} className="mt-1.5 text-sm text-signal-strong" />
       </fieldset>
 
-      {/* Conditional follow-up — announced politely when revealed. */}
+      {/* Conditional follow-up, announced politely when revealed. */}
       <div aria-live="polite">
         {hasSafetyDept === "No" ? (
           <fieldset className="rounded-md border border-steel/20 bg-panel p-5">
             <legend className={`${labelClass} px-1`}>
-              Would you want Medix to handle that for you — first-injury reporting
-              and workers&apos; comp claim support?
+              Would you want Medix Occupational to handle that for you: first-injury
+              reporting and workers&apos; comp claim support?
             </legend>
             <RadioRow
               name="wantsSafetyDept"
@@ -218,7 +218,7 @@ export function LeadQualificationForm() {
       </Button>
 
       <p className="text-xs leading-relaxed text-steel">
-        We&apos;ll only use this to contact you about Medix. See our{" "}
+        We&apos;ll only use this to contact you about Medix Occupational. See our{" "}
         <Link href="/privacy" className="text-brand underline">
           Privacy Policy
         </Link>

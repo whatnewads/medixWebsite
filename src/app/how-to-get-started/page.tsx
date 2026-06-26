@@ -9,7 +9,7 @@ import { LeadQualificationForm } from "@/components/forms/LeadQualificationForm"
 export const metadata: Metadata = pageMetadata({
   title: "How to get started",
   description:
-    "Getting a site covered with Medix: tell us about the project, we mobilize a contents-tracked first-aid bag and your certified responders, then you go live with onsite occupational health on demand.",
+    "Getting a site covered with Medix Occupational: tell us about the project, we mobilize a contents-tracked first-aid bag and your certified responders, then you go live with onsite occupational health on demand.",
   path: "/how-to-get-started",
 });
 
@@ -17,7 +17,7 @@ const steps = [
   {
     n: "01",
     title: "Tell us about the project",
-    body: "Size, type, location, timeline — using the form below.",
+    body: "Size, type, location, and timeline, using the form below.",
   },
   {
     n: "02",
@@ -50,6 +50,13 @@ export default function HowToGetStartedPage() {
               </li>
             ))}
           </ol>
+
+          <p className="mt-8 max-w-2xl rounded-md border border-signal/40 bg-signal/5 p-5 text-base leading-relaxed text-ink">
+            <span className="font-semibold">
+              Don&apos;t have certified responders?
+            </span>{" "}
+            We provide CPR, First Aid, and AED certifications to get you started.
+          </p>
         </Container>
       </section>
 

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-/** Mono utility label that sits above a heading — encodes a true, specific signal. */
+/** Mono utility label that sits above a heading, encodes a true, specific signal. */
 export function Eyebrow({
   children,
   className = "",
