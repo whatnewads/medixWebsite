@@ -1,7 +1,21 @@
 // Single source of truth for site-wide constants.
 
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://medix.work";
+// Resolve the public site URL defensively: tolerate a missing scheme, whitespace,
+// or an empty/unparseable value so a bad env var can never crash the build
+// (metadataBase = new URL(SITE_URL) throws on invalid input during static generation).
+function resolveSiteUrl(): string {
+  const fallback = "https://medix.work";
+  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (!raw) return fallback;
+  const candidate = /^https?:\/\//i.test(raw) ? raw : `https://${raw}`;
+  try {
+    return new URL(candidate).origin;
+  } catch {
+    return fallback;
+  }
+}
+
+export const SITE_URL = resolveSiteUrl();
 
 export const site = {
   name: "Medix",

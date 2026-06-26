@@ -15,7 +15,9 @@ import {
 } from "./fields";
 import { Button } from "@/components/ui/Button";
 
-const FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_LEAD_ID ?? "";
+// Env is the source of truth; fall back to the known public ID so a missing/empty
+// env var can't crash the build (useForm throws on an empty key during prerender).
+const FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_LEAD_ID || "xkolnbjl";
 
 type SafetyDept = "" | "Yes" | "No" | "I don't know";
 
