@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card } from "@/components/ui/Card";
 import { LinkButton } from "@/components/ui/Button";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = pageMetadata({
   title: "About, built by a paramedic",

@@ -9,6 +9,7 @@ import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { organizationLd, websiteLd, serviceLd } from "@/lib/seo";
 import { site, SITE_URL } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const archivo = Archivo({
   variable: "--font-archivo",

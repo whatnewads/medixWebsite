@@ -5,6 +5,7 @@ import { faqs } from "@/lib/faqs";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { LinkButton } from "@/components/ui/Button";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = pageMetadata({
   title: "FAQs",

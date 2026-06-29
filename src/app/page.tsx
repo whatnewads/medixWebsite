@@ -6,6 +6,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Numeral } from "@/components/ui/Numeral";
 import { Lifeline } from "@/components/ui/Lifeline";
 import { Card } from "@/components/ui/Card";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = pageMetadata({
   title: "Occupational telemedicine for jobsites",
