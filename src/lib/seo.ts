@@ -93,6 +93,24 @@ export function serviceLd() {
   };
 }
 
+export function medicCadenceServiceLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Medic Cadence",
+    serviceType: "Paramedic-guided CPR support for jobsite crews",
+    description:
+      "Medic Cadence puts a standby licensed paramedic on screen during a cardiac emergency, guiding a certified jobsite crew through CPR while emergency services are en route. A module of Medix Occupational. Cadence works alongside 911 and does not replace emergency medical services.",
+    provider: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.url,
+    },
+    areaServed: "US",
+    url: `${site.url}/cadence`,
+  };
+}
+
 export function faqPageLd() {
   return {
     "@context": "https://schema.org",

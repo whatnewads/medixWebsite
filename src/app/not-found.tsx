@@ -1,7 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { LinkButton } from "@/components/ui/Button";
-import { Analytics } from "@vercel/analytics/next";
 
 export default function NotFound() {
   return (

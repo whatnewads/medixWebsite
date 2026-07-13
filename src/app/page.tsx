@@ -6,7 +6,6 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Numeral } from "@/components/ui/Numeral";
 import { Lifeline } from "@/components/ui/Lifeline";
 import { Card } from "@/components/ui/Card";
-import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = pageMetadata({
   title: "Occupational telemedicine for jobsites",
@@ -169,6 +168,30 @@ export default function HomePage() {
               </LinkButton>
             </div>
           </Card>
+        </Container>
+      </section>
+
+      {/* Medic Cadence teaser (compact, secondary to the hero) */}
+      <section className="border-t border-steel/15 bg-panel py-12 sm:py-16">
+        <Container>
+          <div className="rounded-md border border-signal/40 bg-signal/5 p-6 sm:p-8">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+              <div className="max-w-2xl">
+                <Eyebrow>New · Medic Cadence</Eyebrow>
+                <h2 className="mt-3 text-2xl font-bold sm:text-3xl">
+                  When a heart stops, your crew isn&apos;t guiding CPR alone.
+                </h2>
+                <p className="mt-3 leading-relaxed text-steel">
+                  Medic Cadence adds live, paramedic-guided CPR support during a
+                  cardiac emergency, working alongside 911 while EMS is on the
+                  way.
+                </p>
+              </div>
+              <LinkButton href="/cadence" variant="secondary" className="shrink-0">
+                Explore Medic Cadence
+              </LinkButton>
+            </div>
+          </div>
         </Container>
       </section>
 

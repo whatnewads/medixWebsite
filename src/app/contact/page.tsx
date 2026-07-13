@@ -4,7 +4,6 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card } from "@/components/ui/Card";
 import { WaitlistForm } from "@/components/forms/WaitlistForm";
-import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = pageMetadata({
   title: "Join the waitlist",
