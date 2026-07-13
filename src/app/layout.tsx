@@ -9,6 +9,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { organizationLd, websiteLd, serviceLd } from "@/lib/seo";
 import { site, SITE_URL } from "@/lib/site";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -80,6 +81,7 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics />
       </body>
     </html>
   );

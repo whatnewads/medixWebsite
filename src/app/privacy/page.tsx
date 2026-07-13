@@ -50,6 +50,15 @@ export default function PrivacyPage() {
             marketing site.
           </p>
 
+          <h2 className="text-xl font-bold text-ink">Analytics</h2>
+          <p>
+            We use privacy-friendly analytics and Google Analytics to understand
+            how visitors use this site. These tools may set cookies and collect
+            standard usage data (such as pages viewed and general location) to
+            help us improve the site. They are not used to identify you
+            personally.
+          </p>
+
           <h2 className="text-xl font-bold text-ink">Contact</h2>
           <p>
             Questions about your information? Reach us through the{" "}

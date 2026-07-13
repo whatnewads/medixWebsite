@@ -6,11 +6,11 @@ import type { NextConfig } from "next";
 // TODO: tighten to nonce-based CSP via middleware if this site grows.
 const csp = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com",
+  "script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com https://www.googletagmanager.com",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data:",
+  "img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com",
   "font-src 'self'",
-  "connect-src 'self' https://formspree.io https://*.vercel-insights.com https://va.vercel-scripts.com",
+  "connect-src 'self' https://formspree.io https://*.vercel-insights.com https://va.vercel-scripts.com https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com",
   "form-action 'self' https://formspree.io",
   "frame-ancestors 'none'",
   "base-uri 'self'",
