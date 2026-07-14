@@ -164,7 +164,8 @@ export default function HomePage() {
             <p className="mt-4 max-w-3xl text-xl leading-relaxed text-ink sm:text-2xl">
               Wesley Yielding spent 8 years in EMS and 4 in occupational health,
               on sites of 25 to 500 people. Medic Cadence is the service he built to reach the sites less than 25 people.
-            <br>
+            </p>
+            <p>
               Team members get hurt on any jobsite. It shouldn&apos;t come from a board of a client to make healthcare accessible to job sites. Wes wants easy access to health care on any job site. If even one person&apos;s quality of life is improved by shorter wait and treatment times, then Medic Cadence is a resounding success.
             </p>
             <div className="mt-6">
