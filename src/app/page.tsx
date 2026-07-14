@@ -166,18 +166,6 @@ export default function HomePage() {
               on sites of 25 to 500 people. Medic Cadence is the service he
               wished those crews had.
             </p>
-          
-          
-          <ul className="mt-3 space-y-1.5 text-steel">
-             <li className="flex items-start gap-2">
-             <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" aria-hidden="true" />
-             CPR support during a cardiac arrest
-           </li>
-         </ul>
-          
-          
-          
-          
             <div className="mt-6">
               <LinkButton href="/about" variant="secondary" className="px-5 py-2.5">
                 Meet the founder
