@@ -44,7 +44,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <Container className="pt-16 pb-20 sm:pt-24 sm:pb-24">
           <div className="max-w-3xl">
-            <Eyebrow>Occupational telemedicine for jobsites</Eyebrow>
+            <Eyebrow>Occupational telemedicine on demand</Eyebrow>
             <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl lg:text-6xl">
               Too big for a first-aid kit.{" "}
               <span
@@ -71,8 +71,8 @@ export default function HomePage() {
             </div>
 
             <p className="mt-8 max-w-xl text-base leading-relaxed text-ink">
-              When a worker goes down, a licensed paramedic is on screen in
-              seconds, guiding your crew through the right care, right away.
+              When a worker is injured, a licensed paramedic is on screen in
+              minutes, guiding your crew through the right care, right away.
             </p>
           </div>
         </Container>
@@ -89,7 +89,7 @@ export default function HomePage() {
             </span>
           </div>
           <p className="mt-3 text-center font-mono text-xs uppercase tracking-[0.14em] text-steel">
-            A medic on every jobsite. Without a medic on every jobsite.
+            A medic on every jobsite. Priced as you connect.
           </p>
         </Container>
       </section>

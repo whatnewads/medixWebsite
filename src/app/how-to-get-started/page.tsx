@@ -9,7 +9,7 @@ import { LeadQualificationForm } from "@/components/forms/LeadQualificationForm"
 export const metadata: Metadata = pageMetadata({
   title: "How to get started",
   description:
-    "Getting a site covered with Medic Cadence: tell us about the project, we mobilize a contents-tracked first-aid bag and your certified responders, then you go live with onsite occupational health on demand.",
+    "Getting a site covered with Medic Cadence: tell us about the project, we mobilize a contents-tracked first-aid bag with equipment and designate your certified responders, then you go live with onsite occupational health on demand.",
   path: "/how-to-get-started",
 });
 
@@ -55,7 +55,7 @@ export default function HowToGetStartedPage() {
             <span className="font-semibold">
               Don&apos;t have certified responders?
             </span>{" "}
-            We provide CPR, First Aid, and AED certifications to get you started.
+            We provide CPR, First Aid, AED, and stop the bleed certifications to get you started.
           </p>
         </Container>
       </section>
