@@ -38,7 +38,6 @@ const offerings = [
 
 export default function WhatWeDoPage() {
   return (
-    <>
       <section className="py-16 sm:py-24">
         <Container>
           <Eyebrow>What we do</Eyebrow>
@@ -103,6 +102,5 @@ export default function WhatWeDoPage() {
           </div>
         </Container>
       </section>
-    </>
   );
 }
