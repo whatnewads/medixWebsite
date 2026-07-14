@@ -66,30 +66,30 @@ export default function WhatWeDoPage() {
         </Container>
       </section>
 
-      /* { Medic Cadence module } */
-      /* <section className="border-t border-steel/15 py-16 sm:py-24">
-        <Container>
-          <Eyebrow>Module · Medic Cadence</Eyebrow>
-          <h2 className="mt-3 max-w-2xl text-2xl sm:text-3xl">
+          {/* Medic Cadence module
+            /* <section className="border-t border-steel/15 py-16 sm:py-24">
+            <Container>
+            <Eyebrow>Module · Medic Cadence</Eyebrow>
+            <h2 className="mt-3 max-w-2xl text-2xl sm:text-3xl">
             Live, paramedic-guided CPR, at the push of a button.
-          </h2>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-steel">
+            </h2>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-steel">
             Your crew is CPR-certified, but no certification fully prepares
             anyone for the real moment. Medic Cadence puts a standby licensed
             paramedic on screen during a cardiac emergency to guide your
             responder through compressions, keep them on cadence, and support AED
             use, until EMS takes over.
-          </p>
-          <p className="mt-5 max-w-2xl rounded-md border border-signal/40 bg-signal/5 p-4 text-base font-medium text-ink">
+            </p>
+            <p className="mt-5 max-w-2xl rounded-md border border-signal/40 bg-signal/5 p-4 text-base font-medium text-ink">
             Cadence works alongside 911, never instead of it.
-          </p>
-          <div className="mt-6">
+            </p>
+            <div className="mt-6">
             <LinkButton href="/cadence" variant="secondary">
-              Explore Medic Cadence
+            Explore Medic Cadence
             </LinkButton>
-          </div>
-        </Container>
-      </section> */
+            </div>
+            </Container>
+            </section> */}
 
       <section className="bg-navy py-16 text-white sm:py-20">
         <Container>
