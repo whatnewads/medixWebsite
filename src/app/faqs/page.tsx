@@ -9,7 +9,7 @@ import { LinkButton } from "@/components/ui/Button";
 export const metadata: Metadata = pageMetadata({
   title: "FAQs",
   description:
-    "Common questions about Medix Occupational telemedicine: who answers the call, how care happens on a remote site, escalation for serious injuries, and who it's for.",
+    "Common questions about Medic Cadence telemedicine: who answers the call, how care happens on a remote site, escalation for serious injuries, and who it's for.",
   path: "/faqs",
 });
 

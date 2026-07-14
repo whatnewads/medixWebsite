@@ -8,31 +8,31 @@ import { LinkButton } from "@/components/ui/Button";
 export const metadata: Metadata = pageMetadata({
   title: "What we do: occupational telemedicine",
   description:
-    "As-needed telemedicine for jobsites: a licensed clinician connects on demand to assess the worker, manage the case, and guide care within first-aid scope, with clear escalation.",
+    "Telemedicine for jobsites: a licensed clinician connects on demand to assess the worker, manage the case, and guide care within first-aid scope, with clear escalation.",
   path: "/what-we-do",
 });
 
 const offerings = [
   {
-    title: "As-needed clinical access",
-    body: "When a worker is hurt or sick, a licensed mid-level clinician (a paramedic or EMT experienced in occupational health) connects on demand.",
+    title: "Mobilization",
+    body: "When a site comes online, we ship a stocked first-aid bag, some equipment, and offer training to your staff on how to use the equipment and application so they are prepared."
+  {
+    title: "As-needed clinical assessments",
+    body: "When a worker is hurt or sick, a licensed clinician (a paramedic or EMT experienced in occupational health) connects on demand. The clinician assesses the worker over telemedicine and will advise first steps, always starting with first aid treatment.",
   },
   {
-    title: "Real-time assessment and case management",
-    body: "The clinician assesses the worker over video and walks your certified crew through the response step by step, then manages the case toward getting the worker back to baseline.",
+    title: "Real-time treatments",
+    body: "The clinician walks your certified crew through first aid treatment steps, then manages the case toward getting the worker back to baseline through ongoing follow ups telemedicine and treatment.",
   },
   {
-    title: "Care within first-aid scope, delivered on site",
-    body: "The hands are your own first-aid/CPR/AED-certified team leads; the clinician is the judgment guiding them, getting the right care to the worker, fast.",
+    title: "Appropriate escalation",
+    body: "Workers with a stable presentation who need more get an outpatient order (for example, imaging), coming from our own occupational physician. Workers with an unstable presentation get immediate emergency direction. Medic Cadence gets people the appropriate care they need.",
   },
   {
-    title: "The Medix Occupational first-aid bag",
-    body: "When a site comes online, we ship a stocked first-aid bag and track its contents, so the clinician always knows what's on hand to guide care.",
+    title: "Case Management",
+    body: "Whether your team member needs outpatient orders or needs an ambulance, or for 99% of cases that require first aid only, our medics guide the case, advising points of contact for that job site on the most appropriate next moves. We will manage the case from time of injury until return to baseline.",
   },
-  {
-    title: "Clear escalation",
-    body: "Workers with a stable presentation who need more get an outpatient order (for example, imaging). Workers with an unstable presentation get immediate emergency direction. Medix Occupational gets people the care they need.",
-  },
+
 ];
 
 export default function WhatWeDoPage() {
@@ -42,12 +42,12 @@ export default function WhatWeDoPage() {
         <Container>
           <Eyebrow>What we do</Eyebrow>
           <h1 className="mt-5 max-w-3xl text-4xl font-extrabold sm:text-5xl">
-            Occupational telemedicine, built for the jobsite.
+            Occupational telemedicine, priced for only when you connect with a paramedic.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-steel">
-            As-needed telemedicine sessions between a worker and a licensed
-            clinician who provides assessment guidance and case management,
-            delivered hands-on through your certified personnel on site.
+            Telemedicine sessions between a worker and a licensed
+            clinician who provides assessment guidance, treatment, and case management,
+            delivered hands-on through your first aid certified personnel on site.
           </p>
         </Container>
       </section>
@@ -66,11 +66,11 @@ export default function WhatWeDoPage() {
       </section>
 
       {/* Medic Cadence module */}
-      <section className="border-t border-steel/15 py-16 sm:py-24">
+      /* <section className="border-t border-steel/15 py-16 sm:py-24">
         <Container>
           <Eyebrow>Module · Medic Cadence</Eyebrow>
           <h2 className="mt-3 max-w-2xl text-2xl sm:text-3xl">
-            Live, paramedic-guided CPR when a worker collapses.
+            Live, paramedic-guided CPR, at the push of a button.
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-steel">
             Your crew is CPR-certified, but no certification fully prepares
@@ -88,7 +88,7 @@ export default function WhatWeDoPage() {
             </LinkButton>
           </div>
         </Container>
-      </section>
+      </section> */
 
       <section className="bg-navy py-16 text-white sm:py-20">
         <Container>

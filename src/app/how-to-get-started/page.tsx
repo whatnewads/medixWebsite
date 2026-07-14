@@ -9,7 +9,7 @@ import { LeadQualificationForm } from "@/components/forms/LeadQualificationForm"
 export const metadata: Metadata = pageMetadata({
   title: "How to get started",
   description:
-    "Getting a site covered with Medix Occupational: tell us about the project, we mobilize a contents-tracked first-aid bag and your certified responders, then you go live with onsite occupational health on demand.",
+    "Getting a site covered with Medic Cadence: tell us about the project, we mobilize a contents-tracked first-aid bag and your certified responders, then you go live with onsite occupational health on demand.",
   path: "/how-to-get-started",
 });
 

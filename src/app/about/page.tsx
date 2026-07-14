@@ -10,7 +10,7 @@ import { LinkButton } from "@/components/ui/Button";
 export const metadata: Metadata = pageMetadata({
   title: "About, built by a paramedic",
   description:
-    "Medix Occupational was founded by Wesley Yielding, a paramedic with 8 years in EMS and 4 in occupational health. We extend real clinical access to the remote crews that need it most.",
+    "Medic Cadence was founded by Wesley Yielding, a paramedic with 8 years in EMS and 4 in occupational health. We extend real clinical access to the remote crews that need it most.",
   path: "/about",
 });
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
 
       <section className="py-16 sm:py-24">
         <Container>
-          <Eyebrow>About Medix Occupational</Eyebrow>
+          <Eyebrow>About Medic Cadence</Eyebrow>
           <h1 className="mt-5 max-w-3xl text-4xl font-extrabold sm:text-5xl">
             Built by a paramedic, for the crews who get left without one.
           </h1>
@@ -49,7 +49,7 @@ export default function AboutPage() {
             <div>
               <Eyebrow>Mission</Eyebrow>
               <p className="mt-4 text-xl leading-relaxed text-ink">
-                Medix Occupational exists to make occupational healthcare
+                Medic Cadence exists to make occupational healthcare
                 accessible to the sites that fall through the cracks: too big for
                 a kit, too small for a full-time medic.
               </p>
@@ -78,13 +78,13 @@ export default function AboutPage() {
             </p>
           </blockquote>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-steel">
-            Medix Occupational puts our paramedics on that same live link,
+            Medix Cadence puts our paramedics on that same live link,
             extending real clinical access to the even more remote. That is the
             accessibility our workforce needs.
           </p>
           <p className="mt-8 max-w-3xl font-display text-xl font-bold leading-snug text-brand sm:text-2xl">
             A licensed clinician in every crew&apos;s corner, on every site, no
-            matter how far from help. That is the dream state Medix Occupational
+            matter how far from help. That is the dream state Medic Cadence
             is built to deliver.
           </p>
         </Container>

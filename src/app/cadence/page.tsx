@@ -9,7 +9,7 @@ import { LinkButton } from "@/components/ui/Button";
 export const metadata: Metadata = pageMetadata({
   title: "Medic Cadence: Live paramedic-guided CPR support for jobsite crews",
   description:
-    "Medic Cadence puts a standby licensed paramedic on screen during a cardiac emergency, guiding your certified crew through CPR while EMS is on the way. A module of Medix Occupational.",
+    "Medic Cadence puts a standby licensed paramedic on screen during a cardiac emergency, guiding your certified crew through CPR while EMS is on the way. A module of Medic Cadence.",
   path: "/cadence",
 });
 
@@ -45,7 +45,7 @@ export default function CadencePage() {
       <section className="py-16 sm:py-24">
         <Container>
           <div className="max-w-3xl">
-            <Eyebrow>A module of Medix Occupational</Eyebrow>
+            <Eyebrow>A module of Medic Cadence</Eyebrow>
             <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl lg:text-6xl">
               When a worker collapses, a paramedic guides your crew through CPR.
               Live.
@@ -76,7 +76,7 @@ export default function CadencePage() {
               Important
             </p>
             <h2 className="text-2xl font-bold text-white sm:text-3xl">
-              Cadence works with 911. Never instead of it.
+              Cadence works with 911 activation. 
             </h2>
             <p className="max-w-3xl text-base leading-relaxed text-white/85 sm:text-lg">
               In any cardiac emergency, the first action is always to call 911.
