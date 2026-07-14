@@ -105,7 +105,7 @@ export default function HomePage() {
           <Eyebrow>The gap</Eyebrow>
           <div className="mt-4 grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-center">
             <h2 className="text-2xl sm:text-3xl">
-              On a smaller to medium jobsite, how are you ensuring your workers get the care they need when they need it?.
+              On a smaller to medium jobsite, how are you ensuring your workers get the care they need when they need it?
             </h2>
             <p className="text-lg leading-relaxed text-steel">
               A first-aid kit can&apos;t assess anyone. A full-time medic costs
