@@ -166,6 +166,18 @@ export default function HomePage() {
               on sites of 25 to 500 people. Medic Cadence is the service he
               wished those crews had.
             </p>
+          
+          
+          <ul className="mt-3 space-y-1.5 text-steel">
+             <li className="flex items-start gap-2">
+             <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" aria-hidden="true" />
+             CPR support during a cardiac arrest
+           </li>
+         </ul>
+          
+          
+          
+          
             <div className="mt-6">
               <LinkButton href="/about" variant="secondary" className="px-5 py-2.5">
                 Meet the founder
@@ -185,12 +197,12 @@ export default function HomePage() {
                 <h2 className="mt-3 text-2xl font-bold sm:text-3xl">
                   Not just telemedicine. We stay on line until your team member is cared for.
                 </h2>
-                <p className="mt-3 leading-relaxed text-steel">
+                <ul className="mt-3 leading-relaxed text-steel">
                   Medic Cadence adds live, paramedic-guided support any time 911 is called for any reason.
-                    <ul>
-                        <li>CPR support during a cardiac arrest</li>
-                    </ul>
-                </p>
+                    <li className="flex items-start gap-2">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" aria-hidden="true" />
+                    CPR support during a cardiac arrest
+                </ul>
               </div>
               <LinkButton href="/cadence" variant="secondary" className="shrink-0">
                 Explore Medic Cadence
