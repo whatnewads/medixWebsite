@@ -16,6 +16,7 @@ const offerings = [
   {
     title: "Mobilization",
     body: "When a site comes online, we ship a stocked first-aid bag, some equipment, and offer training to your staff on how to use the equipment and application so they are prepared."
+  },
   {
     title: "As-needed clinical assessments",
     body: "When a worker is hurt or sick, a licensed clinician (a paramedic or EMT experienced in occupational health) connects on demand. The clinician assesses the worker over telemedicine and will advise first steps, always starting with first aid treatment.",
@@ -65,7 +66,7 @@ export default function WhatWeDoPage() {
         </Container>
       </section>
 
-      {/* Medic Cadence module */}
+      /*{/* Medic Cadence module }*/
       /* <section className="border-t border-steel/15 py-16 sm:py-24">
         <Container>
           <Eyebrow>Module · Medic Cadence</Eyebrow>
