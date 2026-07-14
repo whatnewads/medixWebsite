@@ -190,6 +190,7 @@ export default function HomePage() {
                     <li className="flex items-start gap-2">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" aria-hidden="true" />
                     CPR support during a cardiac arrest
+                    </li>
                 </ul>
               </div>
               <LinkButton href="/cadence" variant="secondary" className="shrink-0">
