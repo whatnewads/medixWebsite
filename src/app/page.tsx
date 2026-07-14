@@ -10,7 +10,7 @@ import { Card } from "@/components/ui/Card";
 export const metadata: Metadata = pageMetadata({
   title: "Occupational telemedicine for jobsites",
   description:
-    "Medix Occupational puts a licensed paramedic on every jobsite: on screen in seconds to guide your certified crew through the right care. Onsite occupational health for medium, non-permanent projects.",
+    "Medic Cadence puts a licensed paramedic on every jobsite: on screen in seconds to guide your certified crew through the right care. Onsite occupational health for medium, non-permanent projects.",
   path: "/",
 });
 
@@ -18,22 +18,27 @@ const steps = [
   {
     n: "01",
     title: "Someone gets hurt.",
-    body: "A certified team lead opens Medix Occupational and connects.",
+    body: "A certified team leader opens Medic Cadence and connects.",
   },
   {
     n: "02",
     title: "A licensed paramedic answers in seconds",
-    body: "By video and audio, before EMS could even reach a remote gate.",
+    body: "By telemedicine, assessing the patient with assistance from a first aid certified team leader.",
   },
   {
     n: "03",
-    title: "The clinician assesses the worker",
-    body: "and guides your certified crew through each step, hands-on, in real time.",
+    title: "The clinician starts treatment",
+    body: "and guides your certified leader through each step, hands-on, in real time.",
   },
   {
     n: "04",
     title: "The clinician directs what's next",
     body: "Care on site within first-aid scope, an outpatient order, or immediate emergency escalation for a worker with an unstable presentation.",
+  },
+  {
+    n: "05",
+    title: "Ongoing case management and treatment",
+    body: "The team member is treated and managed in a first aid scope until return to baseline, case closed.",
   },
 ];
 
@@ -89,7 +94,7 @@ export default function HomePage() {
             </span>
           </div>
           <p className="mt-3 text-center font-mono text-xs uppercase tracking-[0.14em] text-steel">
-            A medic on every jobsite. Priced as you connect.
+            A medic for every jobsite. Priced as you connect.
           </p>
         </Container>
       </section>
@@ -100,13 +105,13 @@ export default function HomePage() {
           <Eyebrow>The gap</Eyebrow>
           <div className="mt-4 grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-center">
             <h2 className="text-2xl sm:text-3xl">
-              On a 25–250-person site, the math is brutal.
+              On a smaller to medium jobsite, how are you ensuring your workers get the care they need when they need it?.
             </h2>
             <p className="text-lg leading-relaxed text-steel">
               A first-aid kit can&apos;t assess anyone. A full-time medic costs
               more than the project can carry. So when someone gets hurt, the
               call is left to whoever&apos;s closest, with no clinician in the
-              loop. Medix Occupational puts a licensed paramedic in that loop,
+              loop until 1-2 hours after injury. Medic Cadence puts a licensed paramedic in that loop,
               instantly.
             </p>
           </div>
@@ -118,7 +123,7 @@ export default function HomePage() {
         <Container>
           <Eyebrow>How it works</Eyebrow>
           <h2 className="mt-3 max-w-2xl text-2xl sm:text-3xl">
-            A live clinical link, the moment your crew needs one.
+            A live clinical link, the instant your crew needs one.
           </h2>
 
           <ol className="mt-12 grid gap-px overflow-hidden rounded-md border border-steel/15 bg-steel/15 sm:grid-cols-2">
@@ -140,13 +145,12 @@ export default function HomePage() {
             <div>
               <Eyebrow>Who it&apos;s for</Eyebrow>
               <h2 className="mt-3 text-2xl sm:text-3xl">
-                Built for the sites that fall through the cracks.
+                Built for the sites that need to protect their team and safety record.
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-steel">
-              General contractors running medium, non-permanent projects:
-              roadwork and similar, roughly 25–250 workers, often where help is
-              far from the gate.
+              General contractors running small to medium, non-permanent projects:
+              roadwork, concrete, and similar, roughly 11–250 workers.
             </p>
           </div>
         </Container>
@@ -159,7 +163,7 @@ export default function HomePage() {
             <Eyebrow>Built by a paramedic</Eyebrow>
             <p className="mt-4 max-w-3xl text-xl leading-relaxed text-ink sm:text-2xl">
               Wesley Yielding spent 8 years in EMS and 4 in occupational health,
-              on sites of 25 to 500 people. Medix Occupational is the service he
+              on sites of 25 to 500 people. Medic Cadence is the service he
               wished those crews had.
             </p>
             <div className="mt-6">
@@ -179,12 +183,13 @@ export default function HomePage() {
               <div className="max-w-2xl">
                 <Eyebrow>New · Medic Cadence</Eyebrow>
                 <h2 className="mt-3 text-2xl font-bold sm:text-3xl">
-                  When a heart stops, your crew isn&apos;t guiding CPR alone.
+                  Not just telemedicine. We stay on line until your team member is cared for.
                 </h2>
                 <p className="mt-3 leading-relaxed text-steel">
-                  Medic Cadence adds live, paramedic-guided CPR support during a
-                  cardiac emergency, working alongside 911 while EMS is on the
-                  way.
+                  Medic Cadence adds live, paramedic-guided support any time 911 is called for any reason.
+                    <ul>
+                        <li>CPR support during a cardiac arrest</li>
+                    </ul>
                 </p>
               </div>
               <LinkButton href="/cadence" variant="secondary" className="shrink-0">
