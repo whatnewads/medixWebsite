@@ -38,6 +38,7 @@ const offerings = [
 
 export default function WhatWeDoPage() {
   return (
+    <>
       <section className="py-16 sm:py-24">
         <Container>
           <Eyebrow>What we do</Eyebrow>
@@ -65,7 +66,7 @@ export default function WhatWeDoPage() {
         </Container>
       </section>
 
-      /*{/* Medic Cadence module }*/
+      {/* Medic Cadence module */}
       /* <section className="border-t border-steel/15 py-16 sm:py-24">
         <Container>
           <Eyebrow>Module · Medic Cadence</Eyebrow>
@@ -102,5 +103,6 @@ export default function WhatWeDoPage() {
           </div>
         </Container>
       </section>
+    </>
   );
 }
