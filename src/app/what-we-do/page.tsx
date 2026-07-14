@@ -66,7 +66,7 @@ export default function WhatWeDoPage() {
         </Container>
       </section>
 
-      {/* Medic Cadence module */}
+      /* { Medic Cadence module } */
       /* <section className="border-t border-steel/15 py-16 sm:py-24">
         <Container>
           <Eyebrow>Module · Medic Cadence</Eyebrow>
