@@ -192,7 +192,9 @@ export default function HomePage() {
                     <li className="flex items-start gap-2">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" aria-hidden="true" />
                     CPR support during a cardiac arrest
-                    Telemedicine support during ambulance response times, never leaving you alone without medical guidance.
+                    </li>
+                    <li className="flex items-start gap-2">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" aria-hidden="true" />                    Telemedicine support during ambulance response times, never leaving you alone without medical guidance.
                     </li>
                 </ul>
               </div>
