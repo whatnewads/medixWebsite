@@ -163,8 +163,9 @@ export default function HomePage() {
             <Eyebrow>Built by a paramedic</Eyebrow>
             <p className="mt-4 max-w-3xl text-xl leading-relaxed text-ink sm:text-2xl">
               Wesley Yielding spent 8 years in EMS and 4 in occupational health,
-              on sites of 25 to 500 people. Medic Cadence is the service he
-              wished those crews had.
+              on sites of 25 to 500 people. Medic Cadence is the service he built to reach the sites less than 25 people.
+            <br>
+              Team members get hurt on any jobsite. It shouldn&apos;t come from a board of a client to make healthcare accessible to job sites. Wes wants easy access to health care on any job site. If even one person&apos;s quality of life is improved by shorter wait and treatment times, then Medic Cadence is a resounding success.
             </p>
             <div className="mt-6">
               <LinkButton href="/about" variant="secondary" className="px-5 py-2.5">
@@ -190,11 +191,15 @@ export default function HomePage() {
                     <li className="flex items-start gap-2">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" aria-hidden="true" />
                     CPR support during a cardiac arrest
+                    Telemedicine support during ambulance response times, never leaving you alone without medical guidance.
                     </li>
                 </ul>
               </div>
+              <p>
+                Your team is never unsupported. Medical guidance is always a click away.
+              </p>
               <LinkButton href="/cadence" variant="secondary" className="shrink-0">
-                Explore Medic Cadence
+                Explore us now!
               </LinkButton>
             </div>
           </div>
@@ -212,7 +217,7 @@ export default function HomePage() {
             </h2>
             <div className="mt-8">
               <LinkButton href="/contact" variant="primary">
-                Join the waitlist
+                Join the waitlist today!
               </LinkButton>
             </div>
           </div>

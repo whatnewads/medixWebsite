@@ -7,9 +7,9 @@ import { Numeral } from "@/components/ui/Numeral";
 import { LinkButton } from "@/components/ui/Button";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Medic Cadence: Live paramedic-guided CPR support for jobsite crews",
+  title: "Medic Cadence: Live paramedic-guided support for jobsite crews when 911 is activated.",
   description:
-    "Medic Cadence puts a standby licensed paramedic on screen during a cardiac emergency, guiding your certified crew through CPR while EMS is on the way. A module of Medic Cadence.",
+    "Medic Cadence puts a licensed paramedic on screen during any emergency, guiding your certified crew through guidance, including CPR, while EMS is on the way. This is a subset module of Medic Cadence.",
   path: "/cadence",
 });
 
@@ -26,8 +26,8 @@ const steps = [
   },
   {
     n: "03",
-    title: "They guide the CPR, live.",
-    body: "The paramedic coaches your responder through compressions, keeping them on cadence, and supports AED use and the rest of the team.",
+    title: "They support your team during an emergency, live.",
+    body: "The paramedic coaches your responder through supportive actions, including compressions, keeping them on cadence, and supports AED use and the rest of the team.",
   },
   {
     n: "04",
@@ -47,13 +47,11 @@ export default function CadencePage() {
           <div className="max-w-3xl">
             <Eyebrow>A module of Medic Cadence</Eyebrow>
             <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl lg:text-6xl">
-              When a worker collapses, a paramedic guides your crew through CPR.
+              When a worker has an emergency, a paramedic guides your crew through the next steps.
               Live.
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-steel sm:text-2xl">
-              Medic Cadence puts a standby licensed paramedic on screen during a
-              cardiac emergency, guiding your certified responder through every
-              compression while EMS is on the way.
+              Medic Cadence puts a standby licensed paramedic on screen during the emergency, guiding your certified responder through every compression while EMS is on the way.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -76,10 +74,10 @@ export default function CadencePage() {
               Important
             </p>
             <h2 className="text-2xl font-bold text-white sm:text-3xl">
-              Cadence works with 911 activation. 
+              Cadence works with 911 activation.
             </h2>
             <p className="max-w-3xl text-base leading-relaxed text-white/85 sm:text-lg">
-              In any cardiac emergency, the first action is always to call 911.
+              In any emergency, the first action is always to call 911.
               Medic Cadence supports your crew during the critical minutes while
               emergency services are on the way. It does not replace emergency
               medical services.
@@ -97,7 +95,7 @@ export default function CadencePage() {
               The minutes before EMS arrives decide the most.
             </h2>
             <p className="text-lg leading-relaxed text-steel">
-              Your crew is CPR-certified. But no certification fully prepares
+              Your crew is CPR/AED-certified. But no certification fully prepares
               anyone for the real moment, on a real worker, with the clock
               running. Medic Cadence puts a calm, licensed paramedic on the line
               to guide your responder through it: rate, depth, recoil, hand
@@ -113,7 +111,7 @@ export default function CadencePage() {
         <Container>
           <Eyebrow>How it works</Eyebrow>
           <h2 className="mt-3 max-w-2xl text-2xl sm:text-3xl">
-            A paramedic in the loop, from the first compression to EMS handoff.
+            A paramedic in the loop, from the moment of injury to EMS handoff.
           </h2>
 
           <ol className="mt-12 grid gap-px overflow-hidden rounded-md border border-steel/15 bg-steel/15 sm:grid-cols-2">
@@ -141,8 +139,8 @@ export default function CadencePage() {
             <p className="text-lg leading-relaxed text-steel">
               Medic Cadence is an add-on for crews already running Medix
               Occupational, and for certified jobsite teams who want a licensed
-              paramedic guiding them the moment a cardiac emergency happens. Your
-              responders stay within their certified scope. The paramedic guides.
+              paramedic guiding them the moment an emergency happens. Your
+              responders stay within their certified scope. The paramedic guides and supports your crew.
             </p>
           </div>
         </Container>

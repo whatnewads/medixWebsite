@@ -21,7 +21,7 @@ const values = [
   },
   {
     title: "Never alone",
-    body: "Your crew always has a clinician in their ear.",
+    body: "Your crew always has a clinician they can rely on and consult.",
   },
   {
     title: "We take care of our people",

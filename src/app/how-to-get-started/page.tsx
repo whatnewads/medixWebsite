@@ -70,7 +70,7 @@ export default function HowToGetStartedPage() {
               </h2>
               <p className="mt-4 max-w-md leading-relaxed text-steel">
                 The more we know about your sites, the faster we can get a
-                licensed paramedic into your crew&apos;s corner.
+                licensed paramedic available for your site.
               </p>
             </div>
 
