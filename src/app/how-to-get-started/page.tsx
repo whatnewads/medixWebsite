@@ -10,7 +10,7 @@ import { LeadQualificationForm } from "@/components/forms/LeadQualificationForm"
 export const metadata: Metadata = pageMetadata({
   title: "How to get started",
   description:
-    "How getting a site covered works: how your certified crew connects to a licensed paramedic, what it costs, and what happens after you reach out. Then tell us about your project.",
+    "Tell us about your project and we'll send a free, itemized quote. Then see how getting a site covered works, what it costs, and what happens after you reach out.",
   path: "/how-to-get-started",
 });
 
@@ -18,7 +18,7 @@ const steps = [
   {
     n: "01",
     title: "Tell us about the project",
-    body: "Send the basics using the form below: site size, type of work, location, and how long the project runs. It takes a couple of minutes.",
+    body: "Send the basics using the form above: site size, type of work, location, and how long the project runs. It takes a couple of minutes.",
   },
   {
     n: "02",
@@ -35,22 +35,45 @@ const steps = [
 export default function HowToGetStartedPage() {
   return (
     <>
-      <section className="py-16 sm:py-20">
+      {/* Form first, at the top of the page, above the fold */}
+      <section className="py-12 sm:py-16">
         <Container>
-          <Eyebrow>Get started</Eyebrow>
-          <h1 className="mt-5 max-w-3xl text-4xl font-extrabold sm:text-5xl">
-            Getting a site covered.
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-steel">
-            Here is exactly how it works, what it costs, and what happens after
-            you reach out. No guesswork before you commit.
-          </p>
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-16">
+            <div>
+              <Eyebrow>Get started</Eyebrow>
+              <h1 className="mt-4 text-4xl font-extrabold sm:text-5xl">
+                Getting a site covered.
+              </h1>
+              <p className="mt-5 max-w-md text-lg leading-relaxed text-steel">
+                Tell us about your project and we&apos;ll send a free, itemized
+                quote. Reaching out costs nothing and commits you to nothing.
+              </p>
+              <p className="mt-4 max-w-md leading-relaxed text-steel">
+                Not ready yet? Scroll down for how it works, what it costs, and
+                what happens after you reach out.
+              </p>
+            </div>
+
+            <Card>
+              <LeadQualificationForm />
+            </Card>
+          </div>
+        </Container>
+      </section>
+
+      {/* The three-step process */}
+      <section className="border-t border-steel/15 bg-panel py-16 sm:py-20">
+        <Container>
+          <Eyebrow>How it works</Eyebrow>
+          <h2 className="mt-3 max-w-2xl text-2xl sm:text-3xl">
+            Three steps from first contact to a paramedic on the line.
+          </h2>
 
           <ol className="mt-12 grid gap-6 md:grid-cols-3">
             {steps.map((s) => (
               <li key={s.n}>
                 <Numeral value={s.n} />
-                <h2 className="mt-4 text-lg font-bold">{s.title}</h2>
+                <h3 className="mt-4 text-lg font-bold">{s.title}</h3>
                 <p className="mt-2 leading-relaxed text-steel">{s.body}</p>
               </li>
             ))}
@@ -63,29 +86,6 @@ export default function HowToGetStartedPage() {
             We provide CPR, First Aid, AED, and Stop the Bleed certifications to
             get you started.
           </p>
-        </Container>
-      </section>
-
-      {/* Lead form, kept high so it isn't buried under the detail below */}
-      <section className="border-t border-steel/15 bg-panel py-16 sm:py-20">
-        <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-            <div>
-              <Eyebrow>Tell us about your project</Eyebrow>
-              <h2 className="mt-3 text-2xl sm:text-3xl">
-                A few details and we&apos;ll take it from there.
-              </h2>
-              <p className="mt-4 max-w-md leading-relaxed text-steel">
-                The more we know about your sites, the faster we can get a
-                licensed paramedic available for your site. Reaching out costs
-                nothing and commits you to nothing.
-              </p>
-            </div>
-
-            <Card>
-              <LeadQualificationForm />
-            </Card>
-          </div>
         </Container>
       </section>
 
