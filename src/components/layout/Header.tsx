@@ -16,7 +16,7 @@ export function Header() {
         <Link href="/" className="flex items-center" aria-label="Medix Occupational home">
           <Image
             src="/medixlogo-mark.png"
-            alt="Medix Occupational"
+            alt="Medic Cadence"
             width={1949}
             height={632}
             priority

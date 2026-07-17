@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local pricing notepad (kept out of the repo; not imported anywhere)
+src/app/pricing/pricing.ts

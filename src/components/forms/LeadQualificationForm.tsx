@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
 import { logger } from "@/lib/logger";
+import { trackEvent } from "./track";
 import {
   Field,
   Input,
@@ -61,6 +62,9 @@ export function LeadQualificationForm() {
 
   const leadStatus =
     hasSafetyDept === "No" ? "disqualified_no_safety_dept" : "qualified";
+  // Fire the conversion exactly once per successful submission. Guards against
+  // React StrictMode double-running effects in development.
+  const conversionSent = useRef(false);
 
   // Log the branch when the prospect selects "No", status only, never field values.
   useEffect(() => {
@@ -68,13 +72,22 @@ export function LeadQualificationForm() {
   }, [hasSafetyDept]);
 
   useEffect(() => {
-    if (state.succeeded) {
+    if (state.succeeded && !conversionSent.current) {
+      conversionSent.current = true;
       logger.info("lead_submit_success");
       logger.info(
         leadStatus === "qualified"
           ? "lead_status_qualified"
           : "lead_status_disqualified",
       );
+      // GA4 lead conversion, distinct from the waitlist's `sign_up` so the two
+      // funnels never mix in reporting. `lead_status` is an internal flag, not
+      // PII. Sent only after Formspree confirms success; enhanced measurement
+      // can't see @formspree/react's fetch.
+      trackEvent("generate_lead", {
+        method: "lead_qualification_form",
+        lead_status: leadStatus,
+      });
     }
     // leadStatus is intentionally read at success time; we don't want to re-log on its change.
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -14,23 +15,43 @@ export const metadata: Metadata = pageMetadata({
 
 export default function ContactPage() {
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-12 sm:py-16">
       <Container>
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
-          <div>
-            <Eyebrow>Contact</Eyebrow>
-            <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl">
-              Join the waitlist.
-            </h1>
-            <p className="mt-6 max-w-md text-lg leading-relaxed text-steel">
-              We&apos;re onboarding early sites now. Tell us a little about your
-              company and we&apos;ll be in touch.
-            </p>
-          </div>
+        <div className="mx-auto max-w-xl">
+          {/* Short heading/intro, then the form immediately (above the fold) */}
+          <Eyebrow>Join the waitlist</Eyebrow>
+          <h1 className="mt-4 text-3xl font-extrabold sm:text-4xl">
+            Get on the list.
+          </h1>
+          <p className="mt-3 text-lg leading-relaxed text-steel">
+            We&apos;re onboarding early sites now. Add your details and we&apos;ll
+            be in touch.
+          </p>
 
-          <Card>
+          <Card className="mt-8">
             <WaitlistForm />
           </Card>
+
+          {/* Longer explanatory copy below the form */}
+          <div className="mt-10 space-y-4 text-base leading-relaxed text-steel">
+            <p>
+              Joining the waitlist puts you first in line as we bring sites
+              online. There is no obligation and no cost to reach out. We will
+              follow up to learn about your sites and, if it is a fit, send a
+              free itemized quote.
+            </p>
+            <p>
+              Want the details first? See{" "}
+              <Link href="/how-to-get-started" className="text-brand underline">
+                how it works
+              </Link>{" "}
+              and{" "}
+              <Link href="/pricing" className="text-brand underline">
+                what it costs
+              </Link>
+              .
+            </p>
+          </div>
         </div>
       </Container>
     </section>

@@ -14,7 +14,7 @@ export function Footer() {
             <Link href="/" className="inline-flex" aria-label="Medix Occupational home">
               <Image
                 src="/medixlogo-mark-white.png"
-                alt="Medix Occupational"
+                alt="Medic Cadence"
                 width={1949}
                 height={632}
                 className="h-10 w-auto"

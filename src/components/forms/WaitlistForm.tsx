@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
 import { logger } from "@/lib/logger";
+import { trackEvent } from "./track";
 import {
   Field,
   Input,
@@ -20,10 +21,24 @@ const FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_CONTACT_ID || "xlgyenjw";
 
 export function WaitlistForm() {
   const [state, handleSubmit] = useForm(FORM_ID);
+  // Fire the conversion exactly once per successful submission. Guards against
+  // React StrictMode double-running effects in development.
+  const conversionSent = useRef(false);
 
   // Log outcomes, events only, never field values.
   useEffect(() => {
-    if (state.succeeded) logger.info("waitlist_submit_success");
+    if (state.succeeded && !conversionSent.current) {
+      conversionSent.current = true;
+      logger.info("waitlist_submit_success");
+      // GA4 primary conversion. Formspree has confirmed the submission at this
+      // point; enhanced measurement can't see @formspree/react's fetch, so the
+      // event is sent explicitly. Name must stay `sign_up` (the reporting
+      // workbook matches on it exactly).
+      trackEvent("sign_up", {
+        method: "waitlist_form",
+        form_location: "contact_top",
+      });
+    }
   }, [state.succeeded]);
 
   useEffect(() => {

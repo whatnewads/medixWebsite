@@ -4,11 +4,13 @@ import { SITE_URL } from "@/lib/site";
 const routes = [
   "/",
   "/what-we-do",
+  "/cadence",
   "/how-to-get-started",
   "/about",
   "/faqs",
   "/contact",
   "/privacy",
+  "/pricing",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
