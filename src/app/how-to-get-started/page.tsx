@@ -66,8 +66,31 @@ export default function HowToGetStartedPage() {
         </Container>
       </section>
 
-      {/* How connecting works: the longer-form logistics explanation */}
+      {/* Lead form, kept high so it isn't buried under the detail below */}
       <section className="border-t border-steel/15 bg-panel py-16 sm:py-20">
+        <Container>
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+            <div>
+              <Eyebrow>Tell us about your project</Eyebrow>
+              <h2 className="mt-3 text-2xl sm:text-3xl">
+                A few details and we&apos;ll take it from there.
+              </h2>
+              <p className="mt-4 max-w-md leading-relaxed text-steel">
+                The more we know about your sites, the faster we can get a
+                licensed paramedic available for your site. Reaching out costs
+                nothing and commits you to nothing.
+              </p>
+            </div>
+
+            <Card>
+              <LeadQualificationForm />
+            </Card>
+          </div>
+        </Container>
+      </section>
+
+      {/* How connecting works: the longer-form logistics explanation */}
+      <section className="py-16 sm:py-20">
         <Container>
           <div className="max-w-3xl">
             <Eyebrow>How connecting works</Eyebrow>
@@ -102,7 +125,7 @@ export default function HowToGetStartedPage() {
       </section>
 
       {/* What it costs: transparency + link to /pricing */}
-      <section className="py-16 sm:py-20">
+      <section className="border-t border-steel/15 bg-panel py-16 sm:py-20">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-center">
             <div>
@@ -130,7 +153,7 @@ export default function HowToGetStartedPage() {
       </section>
 
       {/* What happens after you reach out: de-risk the form */}
-      <section className="border-t border-steel/15 bg-panel py-16 sm:py-20">
+      <section className="py-16 sm:py-20">
         <Container>
           <Eyebrow>What happens after you reach out</Eyebrow>
           <h2 className="mt-3 max-w-2xl text-2xl sm:text-3xl">
@@ -140,8 +163,8 @@ export default function HowToGetStartedPage() {
             <Card>
               <h3 className="text-lg font-bold text-brand">You send the basics</h3>
               <p className="mt-2 leading-relaxed text-steel">
-                A few details about your sites through the form below. That is
-                all we need to start.
+                A few details about your sites through the form on this page.
+                That is all we need to start.
               </p>
             </Card>
             <Card>
@@ -157,27 +180,6 @@ export default function HowToGetStartedPage() {
                 If it is a fit, we mobilize the site and get your crew connected.
                 If it is not, no hard feelings.
               </p>
-            </Card>
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-16 sm:py-20">
-        <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-            <div>
-              <Eyebrow>Tell us about your project</Eyebrow>
-              <h2 className="mt-3 text-2xl sm:text-3xl">
-                A few details and we&apos;ll take it from there.
-              </h2>
-              <p className="mt-4 max-w-md leading-relaxed text-steel">
-                The more we know about your sites, the faster we can get a
-                licensed paramedic available for your site.
-              </p>
-            </div>
-
-            <Card>
-              <LeadQualificationForm />
             </Card>
           </div>
         </Container>
