@@ -8,7 +8,7 @@ import { LinkButton } from "@/components/ui/Button";
 export const metadata: Metadata = pageMetadata({
   title: "Pricing",
   description:
-    "Straightforward pricing for onsite occupational telemedicine: a flat monthly standby rate per site, hourly clinical time billed only while you are connected, and a one-time mobilization fee. Get a free quote.",
+    "Straightforward pricing for onsite occupational telemedicine: a flat monthly standby rate per site, hourly clinical time billed only while you are connected, and a one-time mobilization fee. Join the waitlist.",
   path: "/pricing",
 });
 
@@ -103,11 +103,11 @@ export default function PricingPage() {
         </Container>
       </section>
 
-      {/* Free quote CTA */}
+      {/* Final CTA */}
       <section className="bg-navy py-20 text-white sm:py-24">
         <Container>
           <div className="max-w-3xl">
-            <Eyebrow onDark>Free quote</Eyebrow>
+            <Eyebrow onDark>Get covered</Eyebrow>
             <h2 className="mt-4 text-3xl text-white sm:text-4xl">
               Every site is a little different. Tell us about yours.
             </h2>
@@ -118,7 +118,7 @@ export default function PricingPage() {
             </p>
             <div className="mt-8">
               <LinkButton href="/contact" variant="primary">
-                Get a free quote
+                Join the waitlist today!
               </LinkButton>
             </div>
           </div>
