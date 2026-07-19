@@ -31,12 +31,6 @@ const lineItems = [
     unit: "one-time",
     body: "Single setup when your site begins. It covers shipping materials, equipment, and/or a trailer and setting up the site, and a baseline training day for CPR/First-Aid/AED, and other courses.",
   },
-  {
-    label: "First-aid consumables",
-    price: "You stock",
-    unit: "we guide",
-    body: "You buy and restock the first-aid consumables your crew goes through. We tell you exactly what to keep on hand for your site and track it, so you are never caught short.",
-  },
 ];
 
 export default function PricingPage() {
@@ -48,13 +42,12 @@ export default function PricingPage() {
           <div className="max-w-3xl">
             <Eyebrow>Pricing</Eyebrow>
             <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl">
-              Priced so you only pay for the medicine when you use it.
+              Priced so you only pay for the help and medicine when you use it.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-steel">
-              No long contracts to decode and no per-injury charges. You cover a
-              flat monthly rate to keep a paramedic on standby for each site, and
-              you pay by the hour only when your crew actually connects. That is
-              the whole model.
+              You cover the cost to get the medicine to you. We charge a
+              flat monthly rate for equipment used and liability, and
+              you pay for your medic only when your crew actually connects.
             </p>
           </div>
         </Container>
@@ -90,16 +83,15 @@ export default function PricingPage() {
         <Container>
           <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-center">
             <div>
-              <Eyebrow>What that looks like in a month</Eyebrow>
+              <Eyebrow>What that looks like for you.</Eyebrow>
               <h2 className="mt-3 text-2xl sm:text-3xl">
-                Steady when it is quiet, fair when it is busy.
+                Steady when it is quiet, fair when an injury happens.
               </h2>
             </div>
             <div className="space-y-4 text-lg leading-relaxed text-steel">
               <p>
-                A month with no incidents costs you the monthly standby rate for
-                that site, and nothing more. A month with real events adds only
-                the connected clinical hours your crew used.
+                A month with no incidents costs $800, and nothing more. A month with telehealth appointments adds only
+                the connected time your crew used.
               </p>
               <p>
                 You are never charged per injury, and you are never billed for a
@@ -121,8 +113,8 @@ export default function PricingPage() {
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-white/80">
               Size, location, and signal all shape the mobilization fee, so we
-              price each site on its own. Send us the basics and we will come
-              back with a clear, itemized quote. No obligation.
+              can gauge if your site would be a good fit. Send us the basics and we will come
+              back with a clear plan to get your crew the medics they need with the equipment they need. No obligation.
             </p>
             <div className="mt-8">
               <LinkButton href="/contact" variant="primary">
