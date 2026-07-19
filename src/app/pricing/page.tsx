@@ -17,25 +17,19 @@ const lineItems = [
     label: "Monthly site service, per site",
     price: "$800",
     unit: "/ month",
-    body: "A flat monthly rate for each active site. It covers on-call paramedic access for your crew, scheduled site visits, and stocked, tracked supplies on site. This is your predictable, know-it-in-advance cost.",
+    body: "A flat monthly rate for each active site. It covers on-call paramedic access for your crew, scheduled site visits, and stocked, tracked supplies on site.",
   },
   {
     label: "Telehealth time, only when connected",
     price: "$95",
     unit: "/ hour",
-    body: "You are billed for a paramedic's time only while your crew is actually connected. A quiet month adds nothing here. A typical encounter runs about 45 minutes, and the clock stops when the case is handled.",
+    body: "You are billed for a paramedic's time only while your crew is actually connected. If you don't activate us, we don't bill you for the hourly. A typical encounter runs about 15-30 minutes, and the appointment ends when the treatment is finished, care is handed off to another provider, or the team member has no more complaints.",
   },
   {
     label: "Site mobilization",
     price: "$2,500",
     unit: "one-time",
-    body: "A single setup fee when a site comes online. It covers deploying and setting up the site, the stocked supplies and equipment your crew needs, and a baseline training day to get your responders ready.",
-  },
-  {
-    label: "Training and certifications",
-    price: "$85",
-    unit: "/ student",
-    body: "Get your crew certified and ready to be the hands on site: CPR, First Aid, AED, and Stop the Bleed. Priced per student, run as part of bringing your site online or any time you add people.",
+    body: "Single setup when your site begins. It covers shipping materials, equipment, and/or a trailer and setting up the site, and a baseline training day for CPR/First-Aid/AED, and other courses.",
   },
   {
     label: "First-aid consumables",
