@@ -218,6 +218,10 @@ export default function HomePage() {
               Your crew is never alone when something happens, and neither are
               the people who sent them out there.
             </h2>
+            <p className="mt-5 text-lg leading-relaxed text-white/80">
+              We&apos;re onboarding early sites now. Get on the list and we&apos;ll
+              reach out about covering yours.
+            </p>
             <div className="mt-8">
               <LinkButton href="/contact" variant="primary">
                 Join the waitlist today!

@@ -36,15 +36,22 @@ export default function FaqsPage() {
         </Container>
       </section>
 
-      <section className="bg-navy py-16 text-white sm:py-20">
+      <section className="bg-navy py-20 text-white sm:py-24">
         <Container>
-          <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
-            <h2 className="max-w-xl text-2xl text-white sm:text-3xl">
+          <div className="max-w-3xl">
+            <Eyebrow onDark>Get covered</Eyebrow>
+            <h2 className="mt-4 text-3xl text-white sm:text-4xl">
               Still have questions? Let&apos;s talk.
             </h2>
-            <LinkButton href="/contact" variant="primary">
-              Join the waitlist
-            </LinkButton>
+            <p className="mt-5 text-lg leading-relaxed text-white/80">
+              We&apos;re onboarding early sites now. Get on the list and
+              we&apos;ll answer anything else as we bring your site online.
+            </p>
+            <div className="mt-8">
+              <LinkButton href="/contact" variant="primary">
+                Join the waitlist today!
+              </LinkButton>
+            </div>
           </div>
         </Container>
       </section>

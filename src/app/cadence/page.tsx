@@ -149,13 +149,20 @@ export default function CadencePage() {
       {/* Closing CTA band */}
       <section className="bg-navy py-20 text-white sm:py-24">
         <Container>
-          <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
-            <h2 className="max-w-2xl text-3xl text-white sm:text-4xl">
+          <div className="max-w-3xl">
+            <Eyebrow onDark>Get covered</Eyebrow>
+            <h2 className="mt-4 text-3xl text-white sm:text-4xl">
               A paramedic on the line for the hardest minutes on the job.
             </h2>
-            <LinkButton href="/contact" variant="primary">
-              Add Cadence to your site
-            </LinkButton>
+            <p className="mt-5 text-lg leading-relaxed text-white/80">
+              Cadence rolls out with our early sites. Get on the list and
+              we&apos;ll reach out about adding it to yours.
+            </p>
+            <div className="mt-8">
+              <LinkButton href="/contact" variant="primary">
+                Join the waitlist today!
+              </LinkButton>
+            </div>
           </div>
         </Container>
       </section>
