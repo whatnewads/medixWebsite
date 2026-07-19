@@ -10,7 +10,7 @@ import { LeadQualificationForm } from "@/components/forms/LeadQualificationForm"
 export const metadata: Metadata = pageMetadata({
   title: "How to get started",
   description:
-    "Tell us about your project and we'll send a free, itemized quote. Then see how getting a site covered works, what it costs, and what happens after you reach out.",
+    "Tell us about your project and we'll take it from there. Then see how getting a site covered works, what it costs, and what happens after you reach out.",
   path: "/how-to-get-started",
 });
 
@@ -45,8 +45,8 @@ export default function HowToGetStartedPage() {
                 Getting a site covered.
               </h1>
               <p className="mt-5 max-w-md text-lg leading-relaxed text-steel">
-                Tell us about your project and we&apos;ll send a free, itemized
-                quote. Reaching out costs nothing and commits you to nothing.
+                Tell us about your project and we&apos;ll take it from there.
+                Reaching out costs nothing and commits you to nothing.
               </p>
               <p className="mt-4 max-w-md leading-relaxed text-steel">
                 Not ready yet? Scroll down for how it works, what it costs, and
@@ -168,17 +168,17 @@ export default function HowToGetStartedPage() {
               </p>
             </Card>
             <Card>
-              <h3 className="text-lg font-bold text-brand">We send a free quote</h3>
+              <h3 className="text-lg font-bold text-brand">We plan a live visit</h3>
               <p className="mt-2 leading-relaxed text-steel">
-                We come back with a clear, itemized quote priced for your sites.
-                No obligation, no pressure.
+                We come out to see the site and get your materials and equipment
+                ready.
               </p>
             </Card>
             <Card>
-              <h3 className="text-lg font-bold text-brand">You decide, then go live</h3>
+              <h3 className="text-lg font-bold text-brand">You go live on your start date</h3>
               <p className="mt-2 leading-relaxed text-steel">
-                If it is a fit, we mobilize the site and get your crew connected.
-                If it is not, no hard feelings.
+                We collect the mobilization payment, then your crew is covered
+                from the day you start.
               </p>
             </Card>
           </div>

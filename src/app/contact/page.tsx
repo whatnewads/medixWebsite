@@ -37,8 +37,8 @@ export default function ContactPage() {
             <p>
               Joining the waitlist puts you first in line as we bring sites
               online. There is no obligation and no cost to reach out. We will
-              follow up to learn about your sites and, if it is a fit, send a
-              free itemized quote.
+              follow up to learn about your sites and plan a live visit to get
+              you ready for your start date.
             </p>
             <p>
               Want the details first? See{" "}
