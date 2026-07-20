@@ -66,7 +66,7 @@ export function WaitlistForm() {
       className="space-y-5"
     >
       <Honeypot />
-      <input type="hidden" name="_subject" value="Medix Occupational waitlist signup" />
+      <input type="hidden" name="_subject" value="Medic Cadence waitlist signup" />
 
       <Field label="Business name" htmlFor="companyName" required>
         <Input
@@ -113,7 +113,7 @@ export function WaitlistForm() {
       </Button>
 
       <p className="text-xs leading-relaxed text-steel">
-        We&apos;ll only use this to contact you about Medix Occupational. See our{" "}
+        We&apos;ll only use this to contact you about Medic Cadence. See our{" "}
         <Link href="/privacy" className="text-brand underline">
           Privacy Policy
         </Link>

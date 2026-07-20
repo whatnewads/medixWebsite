@@ -120,7 +120,7 @@ export function LeadQualificationForm() {
       className="space-y-5"
     >
       <Honeypot />
-      <input type="hidden" name="_subject" value="Medix Occupational lead: site qualification" />
+      <input type="hidden" name="_subject" value="Medic Cadence lead: site qualification" />
       {/* Internal qualification flag, rides along to the team's notification email only. */}
       <input type="hidden" name="leadStatus" value={leadStatus} />
 
@@ -152,7 +152,7 @@ export function LeadQualificationForm() {
       </Button>
 
       <p className="text-xs leading-relaxed text-steel">
-        We&apos;ll only use this to contact you about Medix Occupational. See our{" "}
+        We&apos;ll only use this to contact you about Medic Cadence. See our{" "}
         <Link href="/privacy" className="text-brand underline">
           Privacy Policy
         </Link>

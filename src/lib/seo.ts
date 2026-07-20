@@ -89,7 +89,7 @@ export function serviceLd() {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Occupational telemedicine",
-    name: "Occupational telemedicine by Medix Occupational",
+    name: "Occupational telemedicine by Medic Cadence",
     description: site.description,
     provider: { "@type": "Organization", name: site.name, url: site.url },
     areaServed: { "@type": "Country", name: "United States" },
@@ -107,7 +107,7 @@ export function medicCadenceServiceLd() {
     name: "Medic Cadence",
     serviceType: "Paramedic-guided CPR support for jobsite crews",
     description:
-      "Medic Cadence puts a standby licensed paramedic on screen during a cardiac emergency, guiding a certified jobsite crew through CPR while emergency services are en route. A module of Medix Occupational. Cadence works alongside 911 and does not replace emergency medical services.",
+      "Medic Cadence puts a standby licensed paramedic on screen during a cardiac emergency, guiding a certified jobsite crew through CPR while emergency services are en route. A module of Medic Cadence. Cadence works alongside 911 and does not replace emergency medical services.",
     provider: {
       "@type": "Organization",
       name: site.name,

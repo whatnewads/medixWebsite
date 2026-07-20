@@ -78,7 +78,7 @@ export default function AboutPage() {
             </p>
           </blockquote>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-steel">
-            Medix Cadence puts our paramedics on that same live link,
+            Medic Cadence puts our paramedics on that same live link,
             extending real clinical access to the even more remote. That is the
             accessibility our workforce needs.
           </p>

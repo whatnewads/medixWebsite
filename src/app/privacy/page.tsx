@@ -6,7 +6,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 export const metadata: Metadata = pageMetadata({
   title: "Privacy Policy",
   description:
-    "How Medix Occupational handles the business contact information you share through this site.",
+    "How Medic Cadence handles the business contact information you share through this site.",
   path: "/privacy",
 });
 
@@ -36,8 +36,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-xl font-bold text-ink">How we use it</h2>
           <p>
-            We use the information you provide solely to contact you about Medix
-            Occupational and to understand whether the service is a fit for your
+            We use the information you provide solely to contact you about Medic Cadence and to understand whether the service is a fit for your
             sites. We do not sell your information.
           </p>
 

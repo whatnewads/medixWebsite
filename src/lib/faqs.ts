@@ -6,7 +6,7 @@ export type Faq = { question: string; answer: string };
 
 export const faqs: Faq[] = [
   {
-    question: "What is Medix Occupational?",
+    question: "What is Medic Cadence?",
     answer:
       "Occupational telemedicine for jobsites. When a worker is hurt, a licensed paramedic connects by video and audio in seconds and guides your certified crew through assessment and care.",
   },
@@ -18,7 +18,7 @@ export const faqs: Faq[] = [
   {
     question: "How does care happen if the clinician is remote?",
     answer:
-      "Your own first-aid/CPR/AED-certified team leads, foremen, or supers are the hands on site; the Medix Occupational clinician assesses the worker over video and walks them through each step in real time.",
+      "Your own first-aid/CPR/AED-certified team leads, foremen, or supers are the hands on site; the Medic Cadence clinician assesses the worker over video and walks them through each step in real time.",
   },
   {
     question: "What can be handled on site?",
@@ -28,15 +28,15 @@ export const faqs: Faq[] = [
   {
     question: "What about serious injuries?",
     answer:
-      "If a worker presents as unstable or needs a higher level of care, the clinician escalates immediately, directing to emergency services or the right next step. Medix Occupational is built to get people the care they need, not to keep anyone from it.",
+      "If a worker presents as unstable or needs a higher level of care, the clinician escalates immediately, directing to emergency services or the right next step. Medic Cadence is built to get people the care they need, not to keep anyone from it.",
   },
   {
     question: "What's the first-aid bag?",
     answer:
-      "When a site comes online, Medix Occupational ships a stocked first-aid bag and tracks its contents, so the clinician knows exactly what's on hand.",
+      "When a site comes online, Medic Cadence ships a stocked first-aid bag and tracks its contents, so the clinician knows exactly what's on hand.",
   },
   {
-    question: "Who is Medix Occupational for?",
+    question: "Who is Medic Cadence for?",
     answer:
       "General contractors running medium, non-permanent projects: roughly 25–250 workers, often remote, where help could otherwise be far from the gate.",
   },

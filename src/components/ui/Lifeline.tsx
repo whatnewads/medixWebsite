@@ -1,5 +1,5 @@
 /**
- * "The lifeline", Medix Occupational's signature element. A single continuous hairline in brand
+ * "The lifeline", Medic Cadence's signature element. A single continuous hairline in brand
  * blue (the live link between the jobsite and the remote clinician) that, at one
  * moment, resolves into a calm brass pulse travelling along it.
  *

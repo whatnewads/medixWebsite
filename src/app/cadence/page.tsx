@@ -137,8 +137,7 @@ export default function CadencePage() {
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-steel">
-              Medic Cadence is an add-on for crews already running Medix
-              Occupational, and for certified jobsite teams who want a licensed
+              Medic Cadence is an add-on for crews already running Medic Cadence, and for certified jobsite teams who want a licensed
               paramedic guiding them the moment an emergency happens. Your
               responders stay within their certified scope. The paramedic guides and supports your crew.
             </p>

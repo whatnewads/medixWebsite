@@ -18,8 +18,8 @@ function resolveSiteUrl(): string {
 export const SITE_URL = resolveSiteUrl();
 
 export const site = {
-  name: "Medix Occupational",
-  shortName: "Medix Occupational",
+  name: "Medic Cadence",
+  shortName: "Medic Cadence",
   url: SITE_URL,
   tagline: "A Medic on Every Jobsite.",
   description:

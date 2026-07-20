@@ -11,7 +11,7 @@ export function Footer() {
       <Container className="py-14">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <Link href="/" className="inline-flex" aria-label="Medix Occupational home">
+            <Link href="/" className="inline-flex" aria-label="Medic Cadence home">
               <Image
                 src="/medixlogo-mark-white.png"
                 alt="Medic Cadence"
