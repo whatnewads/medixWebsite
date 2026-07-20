@@ -52,6 +52,7 @@ export function organizationLd() {
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-719-301-0020",
+      email: site.email,
       contactType: "sales",
       areaServed: "US",
     },

@@ -24,12 +24,14 @@ export function Footer() {
               Occupational telemedicine for jobsites. A licensed paramedic on
               screen the moment your crew needs one.
             </p>
-            <a
-              href={site.phoneHref}
-              className="mt-4 inline-block font-body text-sm font-medium text-white transition-colors hover:text-signal"
-            >
-              {site.phone}
-            </a>
+            <div className="mt-4 flex flex-col gap-1 font-body text-sm font-medium text-white">
+              <a href={site.phoneHref} className="transition-colors hover:text-signal">
+                {site.phone}
+              </a>
+              <a href={site.emailHref} className="transition-colors hover:text-signal">
+                {site.email}
+              </a>
+            </div>
           </div>
 
           <nav aria-label="Footer" className="grid grid-cols-2 gap-x-12 gap-y-2 sm:flex sm:flex-col">

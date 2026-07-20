@@ -29,12 +29,13 @@ export default function ContactPage() {
             be in touch.
           </p>
           <p className="mt-3 text-base text-steel">
-            Prefer to call?{" "}
-            <a
-              href={site.phoneHref}
-              className="font-medium text-brand underline"
-            >
+            Prefer to reach us directly?{" "}
+            <a href={site.phoneHref} className="font-medium text-brand underline">
               {site.phone}
+            </a>{" "}
+            or{" "}
+            <a href={site.emailHref} className="font-medium text-brand underline">
+              {site.email}
             </a>
           </p>
 
