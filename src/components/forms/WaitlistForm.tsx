@@ -80,6 +80,11 @@ export function WaitlistForm() {
         <ValidationError prefix="Business name" field="companyName" errors={state.errors} className="mt-1.5 text-sm text-signal-strong" />
       </Field>
 
+      <Field label="Your name" htmlFor="contactName" required>
+        <Input id="contactName" name="contactName" type="text" required maxLength={120} autoComplete="name" />
+        <ValidationError prefix="Name" field="contactName" errors={state.errors} className="mt-1.5 text-sm text-signal-strong" />
+      </Field>
+          
       <Field label="Work email" htmlFor="email" required>
         <Input
           id="email"
@@ -92,17 +97,8 @@ export function WaitlistForm() {
         <ValidationError prefix="Email" field="email" errors={state.errors} className="mt-1.5 text-sm text-signal-strong" />
       </Field>
 
-      <Field label="How did you hear about us?" htmlFor="referralSource">
-        <Select id="referralSource" name="referralSource" defaultValue="">
-          <option value="" disabled>
-            Select one
-          </option>
-          <option>Search</option>
-          <option>Referral / word of mouth</option>
-          <option>Social</option>
-          <option>Industry event</option>
-          <option>Other</option>
-        </Select>
+      <Field label="Phone" htmlFor="phone">
+        <Input id="phone" name="phone" type="tel" maxLength={40} autoComplete="tel" />
       </Field>
 
       <Field label="Anything else" htmlFor="message">
