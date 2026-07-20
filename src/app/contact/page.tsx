@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card } from "@/components/ui/Card";
 import { WaitlistForm } from "@/components/forms/WaitlistForm";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
   title: "Join the waitlist",
@@ -26,6 +27,15 @@ export default function ContactPage() {
           <p className="mt-3 text-lg leading-relaxed text-steel">
             We&apos;re onboarding early sites now. Add your details and we&apos;ll
             be in touch.
+          </p>
+          <p className="mt-3 text-base text-steel">
+            Prefer to call?{" "}
+            <a
+              href={site.phoneHref}
+              className="font-medium text-brand underline"
+            >
+              {site.phone}
+            </a>
           </p>
 
           <Card className="mt-8">

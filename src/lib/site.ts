@@ -25,6 +25,8 @@ export const site = {
   description:
     "Occupational telemedicine for jobsites. When a worker is hurt, a licensed paramedic connects by video in seconds and guides your certified crew through the right care.",
   email: "hello@medix.work", // [TODO] confirm real inbox
+  phone: "719-301-0020",
+  phoneHref: "tel:+17193010020",
   logo: `${SITE_URL}/medixlogo.png`,
   ogImage: `${SITE_URL}/og-image.png`,
 } as const;

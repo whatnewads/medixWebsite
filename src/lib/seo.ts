@@ -48,6 +48,13 @@ export function organizationLd() {
     url: site.url,
     logo: site.logo,
     description: site.description,
+    telephone: "+1-719-301-0020",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+1-719-301-0020",
+      contactType: "sales",
+      areaServed: "US",
+    },
     founder: {
       "@type": "Person",
       name: founder.name,
