@@ -12,6 +12,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-steel/15 bg-surface/90 backdrop-blur">
+
       <Container className="flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center" aria-label="Medic Cadence home">
           <Image

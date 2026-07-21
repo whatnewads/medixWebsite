@@ -38,6 +38,8 @@ export function WaitlistForm() {
         method: "waitlist_form",
         form_location: "contact_top",
       });
+      // Google Ads conversion action (fires on any lead-form submission).
+      trackEvent("conversion_event_submit_lead_form");
     }
   }, [state.succeeded]);
 

@@ -88,6 +88,8 @@ export function LeadQualificationForm() {
         method: "lead_qualification_form",
         lead_status: leadStatus,
       });
+      // Google Ads conversion action (fires on any lead-form submission).
+      trackEvent("conversion_event_submit_lead_form");
     }
     // leadStatus is intentionally read at success time; we don't want to re-log on its change.
     // eslint-disable-next-line react-hooks/exhaustive-deps
