@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card } from "@/components/ui/Card";
 import { WaitlistForm } from "@/components/forms/WaitlistForm";
+import { ConversionOnMount } from "@/components/analytics/ConversionOnMount";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
@@ -17,6 +18,8 @@ export const metadata: Metadata = pageMetadata({
 export default function ContactPage() {
   return (
     <section className="py-12 sm:py-16">
+      {/* Google Ads conversion: fires when a visitor lands on /contact */}
+      <ConversionOnMount event="conversion_event_submit_lead_form_1" />
       <Container>
         <div className="mx-auto max-w-xl">
           {/* Short heading/intro, then the form immediately (above the fold) */}
